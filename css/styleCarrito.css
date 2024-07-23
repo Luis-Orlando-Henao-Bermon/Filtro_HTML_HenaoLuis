@@ -1,0 +1,234 @@
+
+*{
+    margin: 0%;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.principal {
+    width:100vw ;
+    display: flex;
+    gap: 2rem   ;
+}
+.barraMenu{
+    position: relative;
+    left: 1rem;
+    width: 3rem;
+    display: none;
+}
+#menuH:checked + .caja1 .barraMenu{
+    left: 0;
+}
+#menuH:checked + .caja1{
+    display: flex;
+}
+.caja1 {
+    width: 20vw;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+.caja1 h1{
+    margin: 5rem 0;
+    font-size: 3rem;
+}
+.caja1 img{
+    width: 3rem;
+}
+.caja1 div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.caja1Carritos {
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.caja1Carritos p{
+    width: 70%;
+}
+#cant{
+    border: #914dff 1px solid;
+    border-radius: 0.3rem;
+    width: 1rem;
+    padding: 0.5rem;
+}
+.caja2{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding:0 1rem;
+}
+.caja2 h2{
+    margin-top: 5rem;
+    font-size:2.5rem;
+}
+.caja2 div img{
+    width: 4rem;
+}
+.producto1 div{
+    gap: 1rem;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.producto1{
+    flex-wrap: wrap;
+    height:10rem;
+    border-radius: 3rem;
+    border: #914dff 2px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 100%;
+}
+.producto2 div{
+    width: 15%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.producto2{
+    flex-wrap: wrap;
+    height:10rem;
+    border-radius: 3rem;
+    border: #914dff 2px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.producto3 div{
+    width: 15%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.producto3{
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    height:10rem;
+    border-radius: 3rem;
+    border: #914dff 2px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.final {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.final a{
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: #914dff;
+    color: white;
+}
+.total {
+    border: #914dff 2px solid ;
+    border-radius: 0.5rem;
+    height: 4rem;
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type="checkbox"]{
+    display: none;
+}
+#producto1:checked + .producto1{
+    display: none;
+}
+#producto2:checked + .producto2{
+    display: none;
+}
+#producto3:checked + .producto3{
+    display: none;
+}
+@media only screen and (max-width:1300px){
+    .barraMenu{
+        display: flex;
+    }
+    .caja1{
+        display:none;
+        position: absolute;
+        background-color: #f5f1fa;
+        height: 100vh;
+        width: 20rem;
+        z-index: 3;
+        padding:0 1rem;
+    }
+    .caja2{
+        width: 98vw;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:870px){
+    #nombre{
+        display: none;
+    }
+}
+@media only screen and (max-width:520px){
+    .principal{
+        gap: 0;
+    }
+    .caja1 h1{
+        font-size: 1.7rem;
+        margin: 2rem 0 ;
+    }
+    .caja1 a{
+        font-size: 1rem;
+    }
+    .caja1 img{
+        width: 2rem;
+    }
+    .caja1{
+        width: 14rem;
+    }
+    .caja2 div img{
+        width: 2rem;
+    }
+    .producto1{
+        border-radius: 1rem;
+        height: auto;
+        padding: 0.5rem;
+    }
+    .producto1 div{
+        width: 4.5rem;
+    }
+    .producto2{
+        border-radius: 1rem;
+        padding: 0.5rem;
+        height: auto;
+    }
+    .producto2 div{
+        width: 4.5rem;
+    }
+    .producto3{
+        border-radius: 1rem;
+        padding: 0.9rem;
+        height: auto;
+    }
+    .producto3 div{
+        width: 4.5rem;    
+    }
+}
