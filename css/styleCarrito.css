@@ -8,7 +8,6 @@
 .principal {
     width:100vw ;
     display: flex;
-    gap: 2rem   ;
 }
 .barraMenu{
     position: relative;
@@ -29,6 +28,10 @@
     flex-direction: column;
     font-size: 1.5rem;
     gap: 1rem;
+    margin-right: 5rem;
+}
+.caja1 a::marker{
+    background-color: #f2ebfa;
 }
 .caja1 h1{
     margin: 5rem 0;
@@ -43,8 +46,15 @@
     align-items: center;
     gap: 0.5rem;
 }
-.caja1Carritos {
+.caja1 p span{
+    color: #914dff;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+.lin5{
     margin: 5rem 0;
+}
+.caja1Carritos {
     display: flex;
     align-items: center;
     width: 100%;
@@ -151,6 +161,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.delete{
+    cursor: pointer;
 }
 input[type="checkbox"]{
     display: none;
